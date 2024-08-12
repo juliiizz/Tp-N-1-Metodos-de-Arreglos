@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trabajo practico 1</title>
+</head>
+
+<body>
+    <script>
+        var arregloEstatura = [1.75, 1.60, 1.80, 1.20, 1.50, 1.46, 1.87, 1.65, 1.67, 1.45]
+        var nuevaEstatura = 1.73;
+        arregloEstatura.push(nuevaEstatura)
+        document.write(arregloEstatura.join('')+'<br>')
+
+
+        var ArregloJugadores = ['Lionel Messi', 'Di Maria', 'Julian Alvarez', 'Dibu Martinez', 'Cuti Romero']
+        var nuevojugador = 'Garnacho';
+        ArregloJugadores.unshift(nuevojugador)
+        document.write(ArregloJugadores.join('') + '<br>')
+        ArregloJugadores.pop()
+        ArregloJugadores.pop()
+        ArregloJugadores.pop()
+        document.write(ArregloJugadores.join('')+'<br>')
+
+        arregloEstatura.pop()
+        document.write(arregloEstatura.join('')+ '<br>')
+
+        var edades = [10, 15, 18, 19, 20, 30, 55, 77, 14, 22]
+
+        document.write(edades.join('')+'<br>')
+        edades.shift(0,5)
+        edades.shift(0,5)
+        edades.shift(0,5)
+        edades.shift(0,5)
+        edades.shift(0,5)
+
+        document.write(edades.join(''))
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
