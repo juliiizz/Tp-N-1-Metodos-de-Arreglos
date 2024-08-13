@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>actividad</title>
+</head>
+
+<body>
+    <!--Desarrolla un programa que permita al usuario ingresar nombres de frutas y clasificarlas 
+en dos categorías: frutas cítricas y frutas con pepitas. El programa debe solicitar al usuario 
+que ingrese el nombre de una fruta y su tipo (cítrico o pepita) cinco veces. Dependiendo 
+del tipo de fruta ingresada, el programa debe agregar la fruta a la lista correspondiente 
+utilizando diferentes métodos de array. Finalmente, el programa debe mostrar las frutas 
+clasificadas en cada categoría-->
+
+    <script>
+        let frutasCitricas = [];
+        let frutasConPepitas = [];
+
+
+        for (let i = 0; i < 5; i++) {
+            let nombre = prompt("Ingresa el nombre de una fruta:");
+            let tipo = prompt("¿La fruta citrico o pepita?");
+
+
+            if (tipo === "citrico") {
+                frutasCitricas.push(nombre);
+
+
+            } else if (tipo === "pepita") {
+                frutasConPepitas.push(nombre);
+
+            } else {
+                alert("Tipo de fruta no reconocido");
+            }
+        }
+
+        document.write("Frutas Cítricas: "+frutasCitricas.join("") + "<br>");
+        document.write("Frutas con Pepitas: "+frutasConPepitas.join("") + "<br>");
+
+
+    </script>
+</body>
+</html>
